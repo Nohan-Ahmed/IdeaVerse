@@ -2,7 +2,7 @@ from django.contrib import admin
 from . import models
 # Register your models here.
 @admin.register(models.Post)
-class UserAdmin(admin.ModelAdmin):
+class PostAdmin(admin.ModelAdmin):
     list_display = ['id', 'user', 'title', 'category']
     search_fields = ['id', 'user', 'title', 'category']
 
